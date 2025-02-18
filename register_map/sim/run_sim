@@ -1,1 +1,1 @@
-irun ../rtl/register_map.v ../tb/tb.v -gui -access +r
+xrun ../rtl/register_map.v ../tb/tb.v -gui -access +r
