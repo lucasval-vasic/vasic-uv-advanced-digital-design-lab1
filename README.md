@@ -1,4 +1,4 @@
-# Lab 1: Coding for synthesis and basic blocks
+#Lab 1: Coding for synthesis and basic blocks
 
 On this lab you will implement some of the basic blocks we saw on the theory session like a controller for SPI configuration interface or a register map. For each of these blocks a simple simulation will be run where the testbench will check that the design under test matches the intended especifications.
 
@@ -57,7 +57,11 @@ This is a breakdown of the input and output ports that the design must contain. 
 
 ## Testbench and simulation
 
-You can kick off the simulation by running the script in spi_slave/sim/run_sim. This scripts expects that the RTL for the SPI slave design is placed in spi_slave/rtl/spi_slave.v
+First of all execute the script to load the paths to Cadence simulator:
+
+> source /eda/cadence/2023-24/scripts/XCELIUM_23.03.007_RHELx86.sh
+
+Now you can kick off the simulation by running the script in spi_slave/sim/run_sim. This scripts expects that the RTL for the SPI slave design is placed in spi_slave/rtl/spi_slave.v
 
 The testbench will produce all the stimulus required for the simulation like producing a reset pulse, toggling the SPI lines and updating the rd_data value when a read operation is requested. The testbench will also check that the SPI write and read operations are honoured by the design, producing an error message if any bad condition is detected.
 
