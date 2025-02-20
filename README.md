@@ -1,4 +1,4 @@
-#Lab 1: Coding for synthesis and basic blocks
+# Lab 1: Coding for synthesis and basic blocks
 
 On this lab you will implement some of the basic blocks we saw on the theory session like a controller for SPI configuration interface or a register map. For each of these blocks a simple simulation will be run where the testbench will check that the design under test matches the intended especifications.
 
