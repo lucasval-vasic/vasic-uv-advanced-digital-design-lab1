@@ -59,7 +59,7 @@ This is a breakdown of the input and output ports that the design must contain. 
 
 First of all execute the script to load the paths to Cadence simulator:
 
-> source /eda/cadence/2023-24/scripts/XCELIUM_23.03.007_RHELx86.sh
+> source /eda/cdsenv.sh
 
 Now you can kick off the simulation by running the script in spi_slave/sim/run_sim. This scripts expects that the RTL for the SPI slave design is placed in spi_slave/rtl/spi_slave.v
 
