@@ -134,5 +134,7 @@ task test_spi_write;
         spi_addr = $random;
         spi_wr_data = $random;
         spi_write_check(spi_addr, spi_wr_data);
+        spi_read(spi_addr, spi_rd_data);
+        check_rd_data(spi_addr, spi_rd_data);
     end
 endtask
