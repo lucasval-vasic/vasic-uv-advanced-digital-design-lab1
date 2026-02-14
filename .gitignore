@@ -3,3 +3,9 @@ sim/*
 
 # Exclude the run_sm file from being ignored
 !sim/run_sim
+
+# Ignore all xcelium.d directories recursively
+**/xcelium.d/
+
+# Ignore all files starting with xrun.
+xrun.*
