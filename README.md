@@ -1,7 +1,6 @@
 # Lab 1: Coding for synthesis and basic blocks
 
-On this lab you will implement some of the basic blocks we saw on the theory session like a controller for SPI configuration interface or a register map. For each of these blocks a simple simulation will be run where the testbench will check that the design under test matches the intended especifications.
-
+In this lab, you will implement several of the fundamental digital design blocks discussed during the theory session, including a controller for an SPI configuration interface and a basic register map. For each block, you will run a simple simulation in which the testbench verifies that your design under test behaves according to the specified requirements.
 
 # SPI slave
 On this section we will create an SPI bus controller that will act as a slave, responding to write and read requests.
