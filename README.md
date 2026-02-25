@@ -2,6 +2,17 @@
 
 In this lab, you will implement several of the fundamental digital design blocks discussed during the theory session, including a controller for an SPI configuration interface and a basic register map. For each block, you will run a simple simulation in which the testbench verifies that your design under test behaves according to the specified requirements.
 
+## Evaluation rubric
+
+The following breakdown shows how each section of this lab contributes to the overall marks:
+
+- SPI compiles: 1 point
+- SPI no write errors: 2 points
+- SPI no read errors: 2 points
+- Register map compiles: 1 point
+- Register map no write errors: 2 points
+- Register map no read errors: 2 points
+  
 # SPI slave
 On this section we will create an SPI bus controller that will act as a slave, responding to write and read requests.
 
