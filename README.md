@@ -2,6 +2,10 @@
 
 In this lab, you will implement several of the fundamental digital design blocks discussed during the theory session, including a controller for an SPI configuration interface and a basic register map. For each block, you will run a simple simulation in which the testbench verifies that your design under test behaves according to the specified requirements.
 
+# Evaluation
+
+You are required to produce a lab report that documents the actions and experiments described in this guide. Present the results of your experiments using text, screenshots, or any other appropriate media.
+
 ## Evaluation rubric
 
 The following breakdown shows how each section of this lab contributes to the overall marks:
