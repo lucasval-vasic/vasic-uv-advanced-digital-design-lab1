@@ -26,7 +26,7 @@ You must create a design that implements an SPI (Serial Peripheral Interface) sl
 ## SPI frame format
 As we saw in the theory section there is no fixed specification for SPI frame format, so we will define our own.
 
-We will define 2 frame types: write frames and read frames. In each of these types the transactions will be structured around 8 bit words in all cases. Addresses and data words will be 8 bits wide each. 
+We will define 2 frame types: write frames and read frames. In each of these types the transactions will be structured around 8 bit words in all cases. Addresses and data words will be 8 bits wide each. All bytes in SPI frame will be transmitted MSB first.
 
 In the write frame all the words will be sent from the SPI master to the SPI slave. Write frames contain a header with value 0x00. Then the 8 bits address will be transmitted, this address will determine which memory position the transactionm will write to. Finally an 8 bit write data word will be transmitted to completely define the write transaction.
 
