@@ -1,1 +1,1 @@
-xrun -sv ../tb/tb.v ../rtl/spi_slave.v -gui -access +r 
+xrun -sv ../tb/tb.v ../rtl/spi_slave.sv -gui -access +r 

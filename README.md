@@ -26,7 +26,7 @@ You must create a design that implements an SPI (Serial Peripheral Interface) sl
 ## SPI frame format
 As we saw in the theory section there is no fixed specification for SPI frame format, so we will define our own.
 
-We will define 2 frame types: write frames and read frames. In each of these types the transactions will be structured around 8 bit words in all cases. Addresses and data words will be 8 bits wide each.
+We will define 2 frame types: write frames and read frames. In each of these types the transactions will be structured around 8 bit words in all cases. Addresses and data words will be 8 bits wide each. 
 
 In the write frame all the words will be sent from the SPI master to the SPI slave. Write frames contain a header with value 0x00. Then the 8 bits address will be transmitted, this address will determine which memory position the transactionm will write to. Finally an 8 bit write data word will be transmitted to completely define the write transaction.
 
@@ -75,7 +75,7 @@ First of all execute the script to load the paths to Cadence simulator:
 
 > source /eda/cdsenv.sh
 
-Now you can kick off the simulation by running the script in spi_slave/sim/run_sim. This scripts expects that the RTL for the SPI slave design is placed in spi_slave/rtl/spi_slave.v
+Now you can kick off the simulation by running the script in spi_slave/sim/run_sim. This script expects that the RTL for the SPI slave design is placed in spi_slave/rtl/spi_slave.sv
 
 The testbench will produce all the stimulus required for the simulation like producing a reset pulse, toggling the SPI lines and updating the rd_data value when a read operation is requested. The testbench will also check that the SPI write and read operations are honoured by the design, producing an error message if any bad condition is detected.
 
@@ -118,7 +118,7 @@ This is a breakdown of the input and output ports that the design must contain. 
     
 ## Testbench and simulation
 
-You can kick off the simulation by running the script in register_map/sim/run_sim. This scripts expects that the RTL for the register map design is placed in register_map/rtl/register_map.v
+You can kick off the simulation by running the script in register_map/sim/run_sim. This script expects that the RTL for the register map design is placed in register_map/rtl/register_map.sv
 
 The testbench will produce all the stimulus required for the simulation like producing a reset pulse, generating a free-running clock to clock the design and performing read and write requests to the register map to exercise the status and control bits. 
 
